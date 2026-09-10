@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+venv/
+.venv/
+
+# Large Datasets & Raw Logs (kept out of Git as per instructions)
+data/
+*.zip
+*.tar.gz
+*.csv
+screenshots/
+*.html
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
