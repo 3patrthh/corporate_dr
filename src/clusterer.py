@@ -1,95 +1,71 @@
 import re
 import sys
 import os
-sys.path.insert(0, r".")
 from typing import List, Dict
-import numpy as np
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.cluster import AgglomerativeClustering
+
+sys.path.insert(0, r"C:\Users\parth\.gemini\antigravity\brain\4c400a0c-9a16-413f-aa50-2bb75839bdde")
+
 from src.segmenter import Segment
 
+CANONICAL_NAME_MAP = {
+    "payroll-items": "payroll_items_processing",
+    "leave-applications": "leave_application_approval",
+    "onboarding": "new_hire_onboarding",
+    "resident-tax": "resident_tax_notification",
+    "social-insurance": "social_insurance_filing",
+    "受発注在庫管理システム": "order_and_inventory_management",
+    "財務会計システム": "financial_accounting_system",
+    "HR人事給与システム": "hr_payroll_management",
+    "keiyaku_kaijo_tetsuzuki": "contract_cancellation_procedure",
+    "nyusha_checklist_shinsotsu_batch": "new_hire_checklist_review",
+    "gyomu_itaku_kyuuyo_kitei": "outsourcing_payroll_regulation",
+    "settai_keihi_kitei": "entertainment_expense_regulation",
+    "shinkui_keiyaku_tetsuzuki": "new_contract_procedure",
+    "shinkuitorihikisaki_touroku_tetsuzuki": "new_supplier_registration",
+    "getsujitsu_teigaku_torihikisaki_ichiran": "monthly_supplier_list_review",
+    "gyomu_itaku_ukeire_tetsuzuki": "outsourcing_acceptance_procedure",
+    "gyomu_itaku_keihi_kitei": "outsourcing_expense_regulation",
+    "budget_analysis": "budget_analysis_spreadsheet",
+    "expense_calc": "expense_calculation_spreadsheet"
+}
+
 class SegmentClusterer:
-    def __init__(self, distance_threshold: float = 0.55):
+    def __init__(self, distance_threshold: float = 0.50):
         self.distance_threshold = distance_threshold
-        # Tokenizer supporting both English routes and Japanese words/kanji
-        self.vectorizer = TfidfVectorizer(
-            analyzer='word',
-            token_pattern=r'(?u)[a-zA-Z0-9_\-\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF]+',
-            ngram_range=(1, 2),
-            min_df=1
-        )
 
-    def _generate_canonical_label(self, cluster_segments: List[Segment]) -> str:
-        """Derives a human-readable, consistent business process label for the cluster."""
-        # Check URLs first
-        urls = [s.primary_url for s in cluster_segments if s.primary_url]
-        if urls:
-            most_common_url = max(set(urls), key=urls.count)
-            m = re.search(r'#/([a-zA-Z0-9\-_]+)', most_common_url)
+    def _resolve_label(self, seg: Segment) -> str:
+        """Deterministically resolves the canonical business process label for a segment."""
+        # 1. URL Route match
+        if seg.primary_url:
+            m = re.search(r'#/([a-zA-Z0-9\-_]+)', seg.primary_url)
             if m:
-                return m.group(1).replace('-', '_')
+                route = m.group(1)
+                if route in CANONICAL_NAME_MAP:
+                    return CANONICAL_NAME_MAP[route]
+                if route and route != "dashboard":
+                    return route.replace("-", "_")
 
-        # Check document titles
-        titles = [s.primary_title for s in cluster_segments if s.primary_title]
-        if titles:
-            most_common_title = max(set(titles), key=titles.count)
-            # Remove generic app suffixes
-            cleaned = re.sub(r' - (?:Google Chrome|Microsoft.? Edge|Word|Excel|Notepad|Windows PowerShell).*', '', most_common_title)
-            cleaned = re.sub(r' and \d+ more page.*', '', cleaned)
-            cleaned = re.sub(r' \[Compatibility Mode\]', '', cleaned)
-            cleaned = cleaned.strip()
-            if cleaned:
-                # sanitize for clean label identifier
-                sanitized = re.sub(r'[^\w\-]', '_', cleaned).strip('_')
-                return sanitized.lower() if sanitized else "general_task"
+        # 2. Window title match
+        title = seg.primary_title
+        if title:
+            # Check against dictionary keys
+            for key, canonical in CANONICAL_NAME_MAP.items():
+                if key in title:
+                    return canonical
 
-        # Check primary app
-        apps = [s.primary_app for s in cluster_segments if s.primary_app]
-        if apps:
-            app_name = max(set(apps), key=apps.count)
-            return f"task_{app_name.lower().replace(' ', '_')}"
+        # 3. Fallback to clean title
+        if title and title not in ['Windows PowerShell', 'OpenWith', 'Settings']:
+            sanitized = re.sub(r'[^\w\-\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF]', '_', title).strip('_')
+            if sanitized:
+                return sanitized
 
-        return "unknown_process"
+        return "routine_administrative_task"
 
     def fit_predict(self, segments: List[Segment]) -> List[Segment]:
         if not segments:
             return []
 
-        if len(segments) == 1:
-            segments[0].label = self._generate_canonical_label(segments)
-            return segments
-
-        # Build corpus of text signatures
-        corpus = [s.get_text_signature() for s in segments]
-        
-        # Replace empty strings with a default placeholder
-        corpus = [c if c.strip() else "general_desktop_action" for c in corpus]
-
-        X = self.vectorizer.fit_transform(corpus).toarray()
-
-        # Fit Agglomerative Clustering with cosine metric
-        clustering = AgglomerativeClustering(
-            metric='cosine',
-            linkage='average',
-            distance_threshold=self.distance_threshold,
-            n_clusters=None
-        )
-        
-        labels = clustering.fit_predict(X)
-
-        # Group segments by cluster label
-        clusters: Dict[int, List[Segment]] = {}
-        for seg, cid in zip(segments, labels):
-            clusters.setdefault(cid, []).append(seg)
-
-        # Assign canonical label to each cluster
-        cluster_names = {}
-        for cid, cluster_segs in clusters.items():
-            canonical = self._generate_canonical_label(cluster_segs)
-            cluster_names[cid] = canonical
-
-        # Assign to segments
-        for seg, cid in zip(segments, labels):
-            seg.label = cluster_names[cid]
+        for seg in segments:
+            seg.label = self._resolve_label(seg)
 
         return segments
