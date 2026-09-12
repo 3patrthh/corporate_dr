@@ -1,0 +1,1093 @@
+{
+  "q1_workload": [
+    {
+      "label": "payroll_items_processing",
+      "count": 299,
+      "total_sec": 3246.0,
+      "total_hours": 0.9016666666666666,
+      "mean_sec": 10.856187290969899,
+      "median_sec": 9.0,
+      "min_sec": 8.0,
+      "max_sec": 48.0,
+      "pct_time": 31.999211356466876
+    },
+    {
+      "label": "leave_application_approval",
+      "count": 192,
+      "total_sec": 2012.0,
+      "total_hours": 0.5588888888888889,
+      "mean_sec": 10.479166666666666,
+      "median_sec": 9.0,
+      "min_sec": 8.0,
+      "max_sec": 20.0,
+      "pct_time": 19.834384858044164
+    },
+    {
+      "label": "new_hire_onboarding",
+      "count": 131,
+      "total_sec": 1443.0,
+      "total_hours": 0.4008333333333333,
+      "mean_sec": 11.01526717557252,
+      "median_sec": 10.0,
+      "min_sec": 8.0,
+      "max_sec": 24.0,
+      "pct_time": 14.225157728706625
+    },
+    {
+      "label": "social_insurance_filing",
+      "count": 100,
+      "total_sec": 1053.0,
+      "total_hours": 0.2925,
+      "mean_sec": 10.53,
+      "median_sec": 9.0,
+      "min_sec": 8.0,
+      "max_sec": 30.0,
+      "pct_time": 10.380520504731862
+    },
+    {
+      "label": "resident_tax_notification",
+      "count": 80,
+      "total_sec": 787.0,
+      "total_hours": 0.21861111111111112,
+      "mean_sec": 9.8375,
+      "median_sec": 9.0,
+      "min_sec": 8.0,
+      "max_sec": 30.0,
+      "pct_time": 7.7582807570977925
+    },
+    {
+      "label": "hr_payroll_management",
+      "count": 7,
+      "total_sec": 392.0,
+      "total_hours": 0.10888888888888888,
+      "mean_sec": 56.0,
+      "median_sec": 55.0,
+      "min_sec": 13.0,
+      "max_sec": 141.0,
+      "pct_time": 3.8643533123028395
+    },
+    {
+      "label": "financial_accounting_system",
+      "count": 11,
+      "total_sec": 188.0,
+      "total_hours": 0.052222222222222225,
+      "mean_sec": 17.09090909090909,
+      "median_sec": 12.0,
+      "min_sec": 10.0,
+      "max_sec": 39.0,
+      "pct_time": 1.8533123028391167
+    },
+    {
+      "label": "order_and_inventory_management",
+      "count": 9,
+      "total_sec": 173.0,
+      "total_hours": 0.04805555555555555,
+      "mean_sec": 19.22222222222222,
+      "median_sec": 15.0,
+      "min_sec": 8.0,
+      "max_sec": 48.0,
+      "pct_time": 1.705441640378549
+    },
+    {
+      "label": "contract_cancellation_procedure",
+      "count": 14,
+      "total_sec": 150.0,
+      "total_hours": 0.041666666666666664,
+      "mean_sec": 10.714285714285714,
+      "median_sec": 10.0,
+      "min_sec": 8.0,
+      "max_sec": 14.0,
+      "pct_time": 1.4787066246056781
+    },
+    {
+      "label": "outsourcing_payroll_regulation",
+      "count": 13,
+      "total_sec": 133.0,
+      "total_hours": 0.036944444444444446,
+      "mean_sec": 10.23076923076923,
+      "median_sec": 10.0,
+      "min_sec": 8.0,
+      "max_sec": 14.0,
+      "pct_time": 1.3111198738170347
+    },
+    {
+      "label": "new_hire_checklist_review",
+      "count": 9,
+      "total_sec": 96.0,
+      "total_hours": 0.02666666666666667,
+      "mean_sec": 10.666666666666666,
+      "median_sec": 10.0,
+      "min_sec": 9.0,
+      "max_sec": 16.0,
+      "pct_time": 0.9463722397476341
+    },
+    {
+      "label": "expense_calculation_spreadsheet",
+      "count": 8,
+      "total_sec": 91.0,
+      "total_hours": 0.025277777777777777,
+      "mean_sec": 11.375,
+      "median_sec": 11.5,
+      "min_sec": 9.0,
+      "max_sec": 15.0,
+      "pct_time": 0.8970820189274448
+    },
+    {
+      "label": "monthly_supplier_list_review",
+      "count": 2,
+      "total_sec": 82.0,
+      "total_hours": 0.02277777777777778,
+      "mean_sec": 41.0,
+      "median_sec": 41.0,
+      "min_sec": 12.0,
+      "max_sec": 70.0,
+      "pct_time": 0.8083596214511041
+    },
+    {
+      "label": "entertainment_expense_regulation",
+      "count": 6,
+      "total_sec": 71.0,
+      "total_hours": 0.01972222222222222,
+      "mean_sec": 11.833333333333334,
+      "median_sec": 11.5,
+      "min_sec": 8.0,
+      "max_sec": 16.0,
+      "pct_time": 0.6999211356466877
+    },
+    {
+      "label": "budget_analysis_spreadsheet",
+      "count": 6,
+      "total_sec": 67.0,
+      "total_hours": 0.01861111111111111,
+      "mean_sec": 11.166666666666666,
+      "median_sec": 10.0,
+      "min_sec": 9.0,
+      "max_sec": 15.0,
+      "pct_time": 0.6604889589905363
+    },
+    {
+      "label": "new_supplier_registration",
+      "count": 5,
+      "total_sec": 66.0,
+      "total_hours": 0.018333333333333333,
+      "mean_sec": 13.2,
+      "median_sec": 10.0,
+      "min_sec": 9.0,
+      "max_sec": 24.0,
+      "pct_time": 0.6506309148264985
+    },
+    {
+      "label": "new_contract_procedure",
+      "count": 1,
+      "total_sec": 43.0,
+      "total_hours": 0.011944444444444445,
+      "mean_sec": 43.0,
+      "median_sec": 43.0,
+      "min_sec": 43.0,
+      "max_sec": 43.0,
+      "pct_time": 0.42389589905362773
+    },
+    {
+      "label": "outsourcing_expense_regulation",
+      "count": 2,
+      "total_sec": 28.0,
+      "total_hours": 0.0077777777777777776,
+      "mean_sec": 14.0,
+      "median_sec": 14.0,
+      "min_sec": 11.0,
+      "max_sec": 17.0,
+      "pct_time": 0.27602523659305994
+    },
+    {
+      "label": "在庫調整メモ",
+      "count": 2,
+      "total_sec": 23.0,
+      "total_hours": 0.006388888888888889,
+      "mean_sec": 11.5,
+      "median_sec": 11.5,
+      "min_sec": 9.0,
+      "max_sec": 14.0,
+      "pct_time": 0.2267350157728707
+    }
+  ],
+  "all_operators": [
+    "CHAITANYA0BCF",
+    "LAPTOP-76QMG9DE",
+    "NEELA9BAF",
+    "SIDDHIGUPTAB00B"
+  ],
+  "operator_breakdown": {
+    "order_and_inventory_management": {
+      "CHAITANYA0BCF": {
+        "count": 2,
+        "time": 29.0
+      },
+      "LAPTOP-76QMG9DE": {
+        "count": 4,
+        "time": 48.0
+      },
+      "NEELA9BAF": {
+        "count": 3,
+        "time": 96.0
+      }
+    },
+    "payroll_items_processing": {
+      "CHAITANYA0BCF": {
+        "count": 39,
+        "time": 395.0
+      },
+      "SIDDHIGUPTAB00B": {
+        "count": 54,
+        "time": 565.0
+      },
+      "NEELA9BAF": {
+        "count": 89,
+        "time": 984.0
+      },
+      "LAPTOP-76QMG9DE": {
+        "count": 117,
+        "time": 1302.0
+      }
+    },
+    "expense_calculation_spreadsheet": {
+      "CHAITANYA0BCF": {
+        "count": 2,
+        "time": 22.0
+      },
+      "NEELA9BAF": {
+        "count": 5,
+        "time": 60.0
+      },
+      "SIDDHIGUPTAB00B": {
+        "count": 1,
+        "time": 9.0
+      }
+    },
+    "resident_tax_notification": {
+      "CHAITANYA0BCF": {
+        "count": 21,
+        "time": 212.0
+      },
+      "SIDDHIGUPTAB00B": {
+        "count": 21,
+        "time": 218.0
+      },
+      "NEELA9BAF": {
+        "count": 14,
+        "time": 130.0
+      },
+      "LAPTOP-76QMG9DE": {
+        "count": 24,
+        "time": 227.0
+      }
+    },
+    "leave_application_approval": {
+      "CHAITANYA0BCF": {
+        "count": 18,
+        "time": 201.0
+      },
+      "SIDDHIGUPTAB00B": {
+        "count": 52,
+        "time": 526.0
+      },
+      "NEELA9BAF": {
+        "count": 62,
+        "time": 640.0
+      },
+      "LAPTOP-76QMG9DE": {
+        "count": 60,
+        "time": 645.0
+      }
+    },
+    "social_insurance_filing": {
+      "CHAITANYA0BCF": {
+        "count": 23,
+        "time": 244.0
+      },
+      "SIDDHIGUPTAB00B": {
+        "count": 27,
+        "time": 284.0
+      },
+      "NEELA9BAF": {
+        "count": 34,
+        "time": 363.0
+      },
+      "LAPTOP-76QMG9DE": {
+        "count": 16,
+        "time": 162.0
+      }
+    },
+    "contract_cancellation_procedure": {
+      "CHAITANYA0BCF": {
+        "count": 1,
+        "time": 12.0
+      },
+      "SIDDHIGUPTAB00B": {
+        "count": 7,
+        "time": 76.0
+      },
+      "LAPTOP-76QMG9DE": {
+        "count": 5,
+        "time": 53.0
+      },
+      "NEELA9BAF": {
+        "count": 1,
+        "time": 9.0
+      }
+    },
+    "new_contract_procedure": {
+      "CHAITANYA0BCF": {
+        "count": 1,
+        "time": 43.0
+      }
+    },
+    "new_supplier_registration": {
+      "CHAITANYA0BCF": {
+        "count": 1,
+        "time": 14.0
+      },
+      "SIDDHIGUPTAB00B": {
+        "count": 1,
+        "time": 9.0
+      },
+      "LAPTOP-76QMG9DE": {
+        "count": 2,
+        "time": 33.0
+      },
+      "NEELA9BAF": {
+        "count": 1,
+        "time": 10.0
+      }
+    },
+    "new_hire_onboarding": {
+      "CHAITANYA0BCF": {
+        "count": 17,
+        "time": 178.0
+      },
+      "SIDDHIGUPTAB00B": {
+        "count": 21,
+        "time": 229.0
+      },
+      "LAPTOP-76QMG9DE": {
+        "count": 74,
+        "time": 830.0
+      },
+      "NEELA9BAF": {
+        "count": 19,
+        "time": 206.0
+      }
+    },
+    "budget_analysis_spreadsheet": {
+      "CHAITANYA0BCF": {
+        "count": 6,
+        "time": 67.0
+      }
+    },
+    "outsourcing_payroll_regulation": {
+      "CHAITANYA0BCF": {
+        "count": 3,
+        "time": 33.0
+      },
+      "LAPTOP-76QMG9DE": {
+        "count": 9,
+        "time": 89.0
+      },
+      "NEELA9BAF": {
+        "count": 1,
+        "time": 11.0
+      }
+    },
+    "outsourcing_expense_regulation": {
+      "SIDDHIGUPTAB00B": {
+        "count": 1,
+        "time": 17.0
+      },
+      "NEELA9BAF": {
+        "count": 1,
+        "time": 11.0
+      }
+    },
+    "hr_payroll_management": {
+      "NEELA9BAF": {
+        "count": 6,
+        "time": 379.0
+      },
+      "LAPTOP-76QMG9DE": {
+        "count": 1,
+        "time": 13.0
+      }
+    },
+    "new_hire_checklist_review": {
+      "LAPTOP-76QMG9DE": {
+        "count": 4,
+        "time": 39.0
+      },
+      "SIDDHIGUPTAB00B": {
+        "count": 1,
+        "time": 9.0
+      },
+      "NEELA9BAF": {
+        "count": 4,
+        "time": 48.0
+      }
+    },
+    "financial_accounting_system": {
+      "LAPTOP-76QMG9DE": {
+        "count": 4,
+        "time": 48.0
+      },
+      "SIDDHIGUPTAB00B": {
+        "count": 1,
+        "time": 10.0
+      },
+      "NEELA9BAF": {
+        "count": 6,
+        "time": 130.0
+      }
+    },
+    "monthly_supplier_list_review": {
+      "LAPTOP-76QMG9DE": {
+        "count": 2,
+        "time": 82.0
+      }
+    },
+    "entertainment_expense_regulation": {
+      "NEELA9BAF": {
+        "count": 4,
+        "time": 47.0
+      },
+      "LAPTOP-76QMG9DE": {
+        "count": 2,
+        "time": 24.0
+      }
+    },
+    "在庫調整メモ": {
+      "NEELA9BAF": {
+        "count": 1,
+        "time": 14.0
+      },
+      "LAPTOP-76QMG9DE": {
+        "count": 1,
+        "time": 9.0
+      }
+    }
+  },
+  "patterns": {
+    "order_and_inventory_management": {
+      "count": 9,
+      "avg_events_per_case": 33.55555555555556,
+      "avg_keystrokes": 4.222222222222222,
+      "avg_clicks": 3.2222222222222223,
+      "avg_clipboard": 1.2222222222222223,
+      "avg_app_switches": 8.11111111111111,
+      "pct_only_browser": 88.88888888888889,
+      "pct_has_excel": 0.0,
+      "pct_has_word": 11.11111111111111,
+      "top_apps": [
+        [
+          "Microsoft Edge",
+          9
+        ],
+        [
+          "Notepad",
+          6
+        ],
+        [
+          "ms-teams",
+          4
+        ]
+      ],
+      "top_urls": [
+        [
+          "http://127.0.0.1:5132/",
+          45
+        ],
+        [
+          "http://127.0.0.1:5133/",
+          21
+        ]
+      ]
+    },
+    "payroll_items_processing": {
+      "count": 299,
+      "avg_events_per_case": 21.869565217391305,
+      "avg_keystrokes": 5.093645484949833,
+      "avg_clicks": 4.8561872909699,
+      "avg_clipboard": 1.0234113712374582,
+      "avg_app_switches": 1.0535117056856187,
+      "pct_only_browser": 74.5819397993311,
+      "pct_has_excel": 4.3478260869565215,
+      "pct_has_word": 23.411371237458194,
+      "top_apps": [
+        [
+          "Microsoft Edge",
+          298
+        ],
+        [
+          "Microsoft Word",
+          70
+        ],
+        [
+          "Notepad",
+          41
+        ]
+      ],
+      "top_urls": [
+        [
+          "http://127.0.0.1:5132/#/payroll-items",
+          1738
+        ],
+        [
+          "http://127.0.0.1:5133/#/payroll-items",
+          947
+        ]
+      ]
+    },
+    "expense_calculation_spreadsheet": {
+      "count": 8,
+      "avg_events_per_case": 38.875,
+      "avg_keystrokes": 25.25,
+      "avg_clicks": 1.375,
+      "avg_clipboard": 0.125,
+      "avg_app_switches": 2.125,
+      "pct_only_browser": 0.0,
+      "pct_has_excel": 100.0,
+      "pct_has_word": 0.0,
+      "top_apps": [
+        [
+          "Microsoft Excel",
+          8
+        ],
+        [
+          "Microsoft Edge",
+          5
+        ],
+        [
+          "Notepad",
+          1
+        ]
+      ],
+      "top_urls": [
+        [
+          "http://127.0.0.1:5133/#/payroll-items",
+          12
+        ]
+      ]
+    },
+    "resident_tax_notification": {
+      "count": 80,
+      "avg_events_per_case": 17.05,
+      "avg_keystrokes": 2.0,
+      "avg_clicks": 5.175,
+      "avg_clipboard": 0.875,
+      "avg_app_switches": 0.7625,
+      "pct_only_browser": 71.25,
+      "pct_has_excel": 0.0,
+      "pct_has_word": 28.749999999999996,
+      "top_apps": [
+        [
+          "Microsoft Edge",
+          79
+        ],
+        [
+          "Microsoft Word",
+          23
+        ],
+        [
+          "Windows Explorer",
+          2
+        ]
+      ],
+      "top_urls": [
+        [
+          "http://127.0.0.1:5133/#/resident-tax",
+          906
+        ],
+        [
+          "http://127.0.0.1:5134/#/leave-applications",
+          7
+        ]
+      ]
+    },
+    "leave_application_approval": {
+      "count": 192,
+      "avg_events_per_case": 19.609375,
+      "avg_keystrokes": 3.7395833333333335,
+      "avg_clicks": 4.53125,
+      "avg_clipboard": 0.8958333333333334,
+      "avg_app_switches": 1.7447916666666667,
+      "pct_only_browser": 47.91666666666667,
+      "pct_has_excel": 1.0416666666666665,
+      "pct_has_word": 51.5625,
+      "top_apps": [
+        [
+          "Microsoft Edge",
+          192
+        ],
+        [
+          "Microsoft Word",
+          99
+        ],
+        [
+          "Windows Explorer",
+          5
+        ]
+      ],
+      "top_urls": [
+        [
+          "http://127.0.0.1:5134/#/leave-applications",
+          770
+        ],
+        [
+          "http://127.0.0.1:5132/#/leave-applications",
+          749
+        ]
+      ]
+    },
+    "social_insurance_filing": {
+      "count": 100,
+      "avg_events_per_case": 20.35,
+      "avg_keystrokes": 3.88,
+      "avg_clicks": 4.86,
+      "avg_clipboard": 0.98,
+      "avg_app_switches": 1.49,
+      "pct_only_browser": 61.0,
+      "pct_has_excel": 8.0,
+      "pct_has_word": 31.0,
+      "top_apps": [
+        [
+          "Microsoft Edge",
+          100
+        ],
+        [
+          "Microsoft Word",
+          31
+        ],
+        [
+          "Notepad",
+          13
+        ]
+      ],
+      "top_urls": [
+        [
+          "http://127.0.0.1:5134/#/social-insurance",
+          583
+        ],
+        [
+          "http://127.0.0.1:5132/#/social-insurance",
+          445
+        ]
+      ]
+    },
+    "contract_cancellation_procedure": {
+      "count": 14,
+      "avg_events_per_case": 22.285714285714285,
+      "avg_keystrokes": 7.857142857142857,
+      "avg_clicks": 0.7857142857142857,
+      "avg_clipboard": 1.0,
+      "avg_app_switches": 3.642857142857143,
+      "pct_only_browser": 0.0,
+      "pct_has_excel": 0.0,
+      "pct_has_word": 100.0,
+      "top_apps": [
+        [
+          "Microsoft Word",
+          14
+        ],
+        [
+          "Microsoft Edge",
+          5
+        ]
+      ],
+      "top_urls": [
+        [
+          "http://127.0.0.1:5134/#/leave-applications",
+          13
+        ]
+      ]
+    },
+    "new_contract_procedure": {
+      "count": 1,
+      "avg_events_per_case": 201.0,
+      "avg_keystrokes": 8.0,
+      "avg_clicks": 2.0,
+      "avg_clipboard": 0.0,
+      "avg_app_switches": 3.0,
+      "pct_only_browser": 0.0,
+      "pct_has_excel": 0.0,
+      "pct_has_word": 100.0,
+      "top_apps": [
+        [
+          "procmine-desktop-agent",
+          1
+        ],
+        [
+          "WindowsTerminal",
+          1
+        ],
+        [
+          "Windows Explorer",
+          1
+        ]
+      ],
+      "top_urls": [
+        [
+          "http://127.0.0.1:5133/#/dashboard",
+          1
+        ],
+        [
+          "http://127.0.0.1:5134/#/dashboard",
+          1
+        ]
+      ]
+    },
+    "new_supplier_registration": {
+      "count": 5,
+      "avg_events_per_case": 12.0,
+      "avg_keystrokes": 2.8,
+      "avg_clicks": 1.2,
+      "avg_clipboard": 0.0,
+      "avg_app_switches": 3.0,
+      "pct_only_browser": 0.0,
+      "pct_has_excel": 0.0,
+      "pct_has_word": 100.0,
+      "top_apps": [
+        [
+          "Microsoft Word",
+          5
+        ],
+        [
+          "Microsoft Edge",
+          2
+        ],
+        [
+          "procmine-desktop-agent",
+          1
+        ]
+      ],
+      "top_urls": [
+        [
+          "http://127.0.0.1:5133/#/resident-tax",
+          2
+        ],
+        [
+          "http://127.0.0.1:5134/",
+          2
+        ]
+      ]
+    },
+    "new_hire_onboarding": {
+      "count": 131,
+      "avg_events_per_case": 21.68702290076336,
+      "avg_keystrokes": 4.9541984732824424,
+      "avg_clicks": 4.1679389312977095,
+      "avg_clipboard": 0.9083969465648855,
+      "avg_app_switches": 2.267175572519084,
+      "pct_only_browser": 25.190839694656486,
+      "pct_has_excel": 1.5267175572519083,
+      "pct_has_word": 74.04580152671755,
+      "top_apps": [
+        [
+          "Microsoft Edge",
+          131
+        ],
+        [
+          "Microsoft Word",
+          97
+        ],
+        [
+          "Windows Explorer",
+          3
+        ]
+      ],
+      "top_urls": [
+        [
+          "http://127.0.0.1:5132/#/onboarding",
+          840
+        ],
+        [
+          "http://127.0.0.1:5133/#/onboarding",
+          524
+        ]
+      ]
+    },
+    "budget_analysis_spreadsheet": {
+      "count": 6,
+      "avg_events_per_case": 82.5,
+      "avg_keystrokes": 70.0,
+      "avg_clicks": 0.6666666666666666,
+      "avg_clipboard": 0.0,
+      "avg_app_switches": 1.5,
+      "pct_only_browser": 0.0,
+      "pct_has_excel": 100.0,
+      "pct_has_word": 0.0,
+      "top_apps": [
+        [
+          "Microsoft Excel",
+          6
+        ],
+        [
+          "Microsoft Edge",
+          2
+        ]
+      ],
+      "top_urls": [
+        [
+          "http://127.0.0.1:5133/#/social-insurance",
+          5
+        ]
+      ]
+    },
+    "outsourcing_payroll_regulation": {
+      "count": 13,
+      "avg_events_per_case": 22.076923076923077,
+      "avg_keystrokes": 8.307692307692308,
+      "avg_clicks": 0.6923076923076923,
+      "avg_clipboard": 1.0,
+      "avg_app_switches": 3.0,
+      "pct_only_browser": 0.0,
+      "pct_has_excel": 0.0,
+      "pct_has_word": 100.0,
+      "top_apps": [
+        [
+          "Microsoft Word",
+          13
+        ],
+        [
+          "Microsoft Edge",
+          5
+        ],
+        [
+          "WindowsTerminal",
+          1
+        ]
+      ],
+      "top_urls": [
+        [
+          "http://127.0.0.1:5133/#/onboarding",
+          13
+        ]
+      ]
+    },
+    "outsourcing_expense_regulation": {
+      "count": 2,
+      "avg_events_per_case": 17.5,
+      "avg_keystrokes": 4.0,
+      "avg_clicks": 1.0,
+      "avg_clipboard": 0.5,
+      "avg_app_switches": 3.5,
+      "pct_only_browser": 0.0,
+      "pct_has_excel": 0.0,
+      "pct_has_word": 100.0,
+      "top_apps": [
+        [
+          "Microsoft Word",
+          2
+        ],
+        [
+          "Microsoft Edge",
+          1
+        ],
+        [
+          "WindowsTerminal",
+          1
+        ]
+      ],
+      "top_urls": [
+        [
+          "http://127.0.0.1:5132/#/payroll-items",
+          2
+        ],
+        [
+          "http://127.0.0.1:5134/",
+          2
+        ]
+      ]
+    },
+    "hr_payroll_management": {
+      "count": 7,
+      "avg_events_per_case": 75.28571428571429,
+      "avg_keystrokes": 12.571428571428571,
+      "avg_clicks": 13.285714285714286,
+      "avg_clipboard": 4.857142857142857,
+      "avg_app_switches": 6.714285714285714,
+      "pct_only_browser": 57.14285714285714,
+      "pct_has_excel": 0.0,
+      "pct_has_word": 42.857142857142854,
+      "top_apps": [
+        [
+          "Microsoft Edge",
+          7
+        ],
+        [
+          "Microsoft Word",
+          3
+        ],
+        [
+          "WindowsTerminal",
+          2
+        ]
+      ],
+      "top_urls": [
+        [
+          "https://app.slack.com/client/T016EU6KJDN/activity-inbox",
+          13
+        ],
+        [
+          "http://127.0.0.1:5134/",
+          2
+        ]
+      ]
+    },
+    "new_hire_checklist_review": {
+      "count": 9,
+      "avg_events_per_case": 23.22222222222222,
+      "avg_keystrokes": 8.0,
+      "avg_clicks": 0.7777777777777778,
+      "avg_clipboard": 1.2222222222222223,
+      "avg_app_switches": 4.0,
+      "pct_only_browser": 0.0,
+      "pct_has_excel": 0.0,
+      "pct_has_word": 100.0,
+      "top_apps": [
+        [
+          "Microsoft Word",
+          9
+        ],
+        [
+          "Microsoft Edge",
+          3
+        ]
+      ],
+      "top_urls": []
+    },
+    "financial_accounting_system": {
+      "count": 11,
+      "avg_events_per_case": 26.181818181818183,
+      "avg_keystrokes": 9.818181818181818,
+      "avg_clicks": 3.727272727272727,
+      "avg_clipboard": 1.0,
+      "avg_app_switches": 1.4545454545454546,
+      "pct_only_browser": 72.72727272727273,
+      "pct_has_excel": 9.090909090909092,
+      "pct_has_word": 18.181818181818183,
+      "top_apps": [
+        [
+          "Microsoft Edge",
+          11
+        ],
+        [
+          "OpenWith",
+          3
+        ],
+        [
+          "Microsoft Word",
+          2
+        ]
+      ],
+      "top_urls": [
+        [
+          "http://127.0.0.1:5133/#/payroll-items",
+          5
+        ],
+        [
+          "http://127.0.0.1:5133/",
+          5
+        ]
+      ]
+    },
+    "monthly_supplier_list_review": {
+      "count": 2,
+      "avg_events_per_case": 8.0,
+      "avg_keystrokes": 0.0,
+      "avg_clicks": 2.0,
+      "avg_clipboard": 0.0,
+      "avg_app_switches": 3.5,
+      "pct_only_browser": 0.0,
+      "pct_has_excel": 0.0,
+      "pct_has_word": 100.0,
+      "top_apps": [
+        [
+          "WindowsTerminal",
+          2
+        ],
+        [
+          "procmine-desktop-agent",
+          2
+        ],
+        [
+          "Microsoft Word",
+          2
+        ]
+      ],
+      "top_urls": [
+        [
+          "http://127.0.0.1:5134/#/dashboard",
+          1
+        ]
+      ]
+    },
+    "entertainment_expense_regulation": {
+      "count": 6,
+      "avg_events_per_case": 19.333333333333332,
+      "avg_keystrokes": 5.666666666666667,
+      "avg_clicks": 1.3333333333333333,
+      "avg_clipboard": 0.8333333333333334,
+      "avg_app_switches": 3.6666666666666665,
+      "pct_only_browser": 0.0,
+      "pct_has_excel": 0.0,
+      "pct_has_word": 100.0,
+      "top_apps": [
+        [
+          "Microsoft Word",
+          6
+        ],
+        [
+          "Microsoft Edge",
+          4
+        ],
+        [
+          "procmine-desktop-agent",
+          1
+        ]
+      ],
+      "top_urls": [
+        [
+          "http://127.0.0.1:5133/#/leave-applications",
+          9
+        ]
+      ]
+    },
+    "在庫調整メモ": {
+      "count": 2,
+      "avg_events_per_case": 10.0,
+      "avg_keystrokes": 2.0,
+      "avg_clicks": 2.0,
+      "avg_clipboard": 0.5,
+      "avg_app_switches": 1.0,
+      "pct_only_browser": 100.0,
+      "pct_has_excel": 0.0,
+      "pct_has_word": 0.0,
+      "top_apps": [
+        [
+          "Notepad",
+          2
+        ],
+        [
+          "Microsoft Edge",
+          2
+        ]
+      ],
+      "top_urls": [
+        [
+          "http://127.0.0.1:5133/#/leave-applications",
+          3
+        ],
+        [
+          "http://127.0.0.1:5134/#/payroll-items",
+          3
+        ]
+      ]
+    }
+  }
+}
